@@ -1,0 +1,224 @@
+/* Global Style Sheet */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+#home {
+  background-image: url(../img/home.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+#home .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home .overlay .content h2 {
+  font-size: 60px;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -250px;
+  display: flex;
+  z-index: 10001111;
+}
+
+#sidebar .menu {
+  background-color: #111;
+  width: 250px;
+  padding-top: 40px;
+}
+
+#sidebar .menu button {
+  position: absolute;
+  right: 90px;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  top: 0;
+  color: white;
+  transition: 0.5s;
+}
+
+#sidebar .menu button:hover {
+  color: red;
+}
+
+#sidebar .menu ul li a {
+  padding: 20px 8px 20px 32px;
+  color: white;
+  font-size: 30px;
+  transition: 0.5s;
+}
+
+#sidebar .menu ul li a:hover {
+  color: rgb(207, 0, 0);
+}
+
+#sidebar .icon {
+  font-size: 20px;
+  color: white;
+  align-self: start;
+  transform: translateY(300px);
+  padding-left: 10px;
+  transition: 0.5s;
+}
+
+#sidebar .icon:hover {
+  color: rgb(207, 0, 0);
+}
+
+/* Start Duration Section */
+
+#duration h3 {
+  padding: 10px;
+  background-color: rgb(0, 189, 189);
+  margin: 0;
+  color: white;
+}
+
+#duration p {
+  background-color: rgb(204, 204, 204);
+  padding: 10px;
+  margin: 0;
+  display: none;
+}
+
+/* Start Details Section */
+
+#details {
+  background-image: url(../img/details.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#details::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#details .box {
+  border: 1px solid white;
+  text-align: center;
+  height: 150px;
+  width: 150px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 9999;
+}
+
+
+/* Start Footer Section */
+
+#contact{
+  margin-top:100px;
+}
+
+#contact .head h2{
+  text-transform: uppercase;
+  font-size: 35px;
+  color:#444;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#contact .head p{
+  color:#777;
+  font-weight: 300;
+  font-size: 16px;
+}
+#contact .con-info h3{
+  color:#444;
+  font-size: 18px;
+  font-weight: bold;
+}
+#contact .con-info p{
+  font-size: 16px;
+  line-height: 26px;
+  color:#777;
+}
+
+#contact .icons{
+  margin-top:50px;
+}
+#contact .icons p{
+  margin-bottom: 35px;
+}
+#contact i{
+  margin-right: 20px;
+  color:#777;
+}
+#contact .red{
+  color:#D62E33 !important;
+}
+
+
+#contact .con-info .social-list{
+  margin-top:60px;
+  color:#777;
+  
+}
+
+#contact .con-info .social-list i{
+  margin-right: 10px;
+  border:1px solid #999;
+  width:40px;
+  height: 40px;
+  line-height: 42px;
+  cursor: pointer;
+  text-align: center;
+}
+#contact .con-info .social-list i:hover{
+  color:#fff;
+  background-color: #D62E33;
+  border:1px solid #D62E33;
+}
+#contact form input,
+#contact form textarea{
+  margin-bottom: 20px;
+  border-radius: 0;
+}
+#contact form textarea{
+  height: 200px;
+  resize:vertical;
+}
+
+#contact form button{
+  background-color: #D62E33;
+  color:#fff;
+  padding:10px 20px;
+  border-radius: 0;
+  text-transform: uppercase
+}
+
+#chars
+{
+  font-size: 20px;
+  color: #D62E33;
+}
